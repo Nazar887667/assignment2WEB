@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task 4 — Portfolio Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="nav-logo">CSS&nbsp;Lab</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cards.html">Card Row</a></li>
+      <li><a href="grid-layout.html">Grid Layout</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+    </ul>
+  </header>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <h1>Task 4 — Portfolio Page</h1>
+      <p>
+        The page body is a two-column <strong>Grid</strong>: projects on
+        the left, an info sidebar on the right. Inside each project card,
+        <strong>Flexbox</strong> arranges the title, description and
+        button in a column with the button pinned to the bottom.
+      </p>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <div class="projects">
+        <article class="project-card">
+          <img src="https://picsum.photos/seed/p1/500/260" alt="Project one screenshot" />
+          <div class="project-body">
+            <h3>Trail Tracker</h3>
+            <p>A small app for logging hikes and elevation gain.</p>
+            <button class="btn">View project</button>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://picsum.photos/seed/p2/500/260" alt="Project two screenshot" />
+          <div class="project-body">
+            <h3>Recipe Box</h3>
+            <p>A recipe manager with tags, search and a shopping list.</p>
+            <button class="btn">View project</button>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://picsum.photos/seed/p3/500/260" alt="Project three screenshot" />
+          <div class="project-body">
+            <h3>Study Timer</h3>
+            <p>A Pomodoro-style timer with longer descriptive text here to
+              show the button still lines up across cards.</p>
+            <button class="btn">View project</button>
+          </div>
+        </article>
+      </div>
+
+      <aside class="sidebar-info">
+        <h3>About</h3>
+        <p>
+          Frontend student building small projects to practice layout,
+          responsiveness and clean CSS structure.
+        </p>
+        <h3>Skills</h3>
+        <ul>
+          <li>HTML5 &amp; semantic markup</li>
+          <li>CSS Flexbox &amp; Grid</li>
+          <li>Responsive layout</li>
+        </ul>
+      </aside>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    Assignment 2 — Advanced CSS (Flexbox &amp; Grid)
+  </footer>
+
+</body>
+</html>
