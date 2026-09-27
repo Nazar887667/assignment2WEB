@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Assignment 2 — Advanced CSS (Flexbox &amp; Grid)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="nav-logo">CSS&nbsp;Lab</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="cards.html">Card Row</a></li>
+      <li><a href="grid-layout.html">Grid Layout</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+  </header>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <h1>Advanced CSS: Flexbox &amp; Grid</h1>
+      <p>
+        This site is a working reference for Assignment 2. Each page below
+        is one task from the brief, built with real Flexbox or Grid code
+        you can open in dev tools and read line by line.
+      </p>
+    </div>
+
+    <div class="task-index">
+      <a class="task-card" href="cards.html">
+        <h3>Task 1 — Card Row</h3>
+        <p>A flex row of equal-height cards with a hover lift.</p>
+      </a>
+      <a class="task-card" href="grid-layout.html">
+        <h3>Task 2 — Page Layout with Grid Areas</h3>
+        <p>Header, sidebar, main and footer placed with named grid areas.</p>
+      </a>
+      <a class="task-card" href="gallery.html">
+        <h3>Task 3 — Image Gallery</h3>
+        <p>A nine-image grid with a caption overlay on hover.</p>
+      </a>
+      <a class="task-card" href="portfolio.html">
+        <h3>Task 4 — Portfolio Page</h3>
+        <p>Flexbox nav plus a Grid-based project/sidebar layout.</p>
+      </a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    Assignment 2 — Advanced CSS (Flexbox &amp; Grid)
+  </footer>
+
+  <style>
+    .task-index {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--gap);
+    }
+    .task-card {
+      flex: 1 1 220px;
+      text-decoration: none;
+      color: var(--ink);
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .task-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      border-color: var(--accent);
+    }
+    .task-card h3 {
+      font-size: 1.05rem;
+    }
+    .task-card p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  </style>
+
+</body>
+</html>
