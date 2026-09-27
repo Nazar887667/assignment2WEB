@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task 2 — Page Layout with Grid Areas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="grid-layout.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="nav-logo">CSS&nbsp;Lab</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cards.html">Card Row</a></li>
+      <li><a href="grid-layout.html" class="active">Grid Layout</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+  </header>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <h1>Task 2 — Page Layout with Grid Areas</h1>
+      <p>
+        <code>.layout-grid</code> defines named areas with
+        <code>grid-template-areas</code>. Each child is placed by giving
+        it a matching <code>grid-area</code> — no row/column numbers to
+        keep track of.
+      </p>
+    </div>
+
+    <div class="layout-grid">
+      <header class="area-header">Site Header</header>
+      <nav class="area-sidebar">
+        <h3>Sidebar</h3>
+        <ul>
+          <li>Section one</li>
+          <li>Section two</li>
+          <li>Section three</li>
+        </ul>
+      </nav>
+      <main class="area-main">
+        <h3>Main Content</h3>
+        <p>
+          This block sits in the <code>main</code> grid area, to the right
+          of the sidebar. Resize the window — the areas keep their
+          positions until the layout switches to a single column on
+          small screens.
+        </p>
+      </main>
+      <footer class="area-footer">Site Footer</footer>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    Assignment 2 — Advanced CSS (Flexbox &amp; Grid)
+  </footer>
+
+</body>
+</html>
