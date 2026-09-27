@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task 1 — Card Row</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="cards.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="nav-logo">CSS&nbsp;Lab</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cards.html" class="active">Card Row</a></li>
+      <li><a href="grid-layout.html">Grid Layout</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+  </header>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <h1>Task 1 — Card Row</h1>
+      <p>
+        <code>.card-row</code> is a flex container. Cards stretch to equal
+        height by default (flex's default <code>align-items: stretch</code>),
+        <code>gap</code> spaces them evenly, and each card lifts slightly
+        on hover.
+      </p>
+    </div>
+
+    <div class="card-row">
+
+      <article class="card">
+        <img src="https://picsum.photos/seed/card1/400/220" alt="Mountain trail" />
+        <div class="card-body">
+          <h3>Trailhead Notes</h3>
+          <p>A short guide to reading elevation profiles before you hike.</p>
+          <button class="btn">Read more</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://picsum.photos/seed/card2/400/220" alt="City street" />
+        <div class="card-body">
+          <h3>City Walks</h3>
+          <p>Three neighborhood routes worth doing on foot, not by bus.</p>
+          <button class="btn">Read more</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://picsum.photos/seed/card3/400/220" alt="Coffee cup" />
+        <div class="card-body">
+          <h3>Slow Mornings</h3>
+          <p>A longer card body to show the row keeps equal card heights.</p>
+          <button class="btn">Read more</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    Assignment 2 — Advanced CSS (Flexbox &amp; Grid)
+  </footer>
+
+</body>
+</html>
